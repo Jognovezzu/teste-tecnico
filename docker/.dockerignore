@@ -1,4 +1,4 @@
-../teste-tecnico/node_modules
-../teste-tecnico/dist
+../api/node_modules
+../api/dist
 ../envs
 ../.vscode

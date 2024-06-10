@@ -2,15 +2,15 @@
 
 FROM node:18.13.0 AS production
 
-WORKDIR /urs/src/teste-tecnico       
+WORKDIR /urs/src/api      
 
-COPY ./teste-tecnico/package*.json ./
+COPY ./api/package*.json ./
 
 RUN npm i --omit=dev --ignore-scripts
 
-COPY ./teste-tecnico ./
+COPY ./api ./
 
-COPY ./envs/.security.env ./teste-tecnico
+COPY ./envs/.security.env ./api
 
 # FIX BCRYPT BUG
 

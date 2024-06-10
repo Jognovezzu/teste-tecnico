@@ -1,5 +1,3 @@
-vesion: "3.8"
-
 services:
   api:
     container_name: teste-api
@@ -10,10 +8,10 @@ services:
     command: npm run start:debug
     restart: always
     env_file:
-      - ../envs/.prod.env
+      - ../envs/.production.env
     volumes:
-      - ../teste-tecnico:/usr/src/teste-tecnico
-      - /usr/src/teste-tecnico/node_modules
+      - ../api:/usr/src/api
+      - /usr/src/api/node_modules
     networks:
       - teste-network
     ports:
@@ -26,10 +24,10 @@ services:
     container_name: teste-db
     build:
       context: ../
-      dockerfile: ./docker/dockerfiles/Dockerfile.postgres
+      dockerfile: ./docker/dockerfiles/postgres/Dockerfile.postgres
     restart: always
     env_file:
-      - ../envs/.prod.env
+      - ../envs/.production.env
     networks:
       - teste-network
     ports:
@@ -39,12 +37,12 @@ services:
     command: 
       - "-p 8432"
 
-  networks:
-    teste-network:
-      name: docker-teste-network
-      external: true
+networks:
+  teste-network:
+    name: docker-teste-network
+    external: true
 
-  volumes:
-    teste-db-data:
-      name: teste-db-data
+volumes:
+  teste-db-data:
+    name: teste-db-data
 
