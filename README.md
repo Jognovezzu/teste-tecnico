@@ -31,7 +31,6 @@ monitorando atualizações nos arquivos para podr aplicar `live reload`.
 ``` bash
 $ cd docker/
 # executar ambiente de desenvolvimento
-# Sobe: sgrid-api-dev && sgrid-postgres-dev
 $ docker compose -f dc.yml up
 ```
 
