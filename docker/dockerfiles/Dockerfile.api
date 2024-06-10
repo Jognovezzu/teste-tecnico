@@ -1,0 +1,19 @@
+# --- ENVIRONMENT
+
+FROM node:18.13.0 AS production
+
+WORKDIR /urs/src/teste-tecnico       
+
+COPY ./teste-tecnico/package*.json ./
+
+RUN npm i --omit=dev --ignore-scripts
+
+COPY ./teste-tecnico ./
+
+COPY ./envs/.security.env ./teste-tecnico
+
+# FIX BCRYPT BUG
+
+RUN npm uninstall bcrypt
+RUN npm install bcrypt
+RUN npm run build
