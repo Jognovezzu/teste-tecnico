@@ -1,13 +1,13 @@
 import { Injectable, Type } from "@nestjs/common";
 import { InjectRepository } from "@nestjs/typeorm";
 import { FindManyOptions, Repository, FindOneOptions } from "typeorm";
-import { Movie } from "./movies.entity";
+import { Movie } from "./movie.entity";
 import { MovieCreateDTO } from "./movie-create.dto";
 import { instanceToPlain, plainToInstance } from "class-transformer";
 
 @Injectable()
 
-export class MoviesService {
+export class MovieService {
     constructor(
         @InjectRepository(Movie)
         private movieRepository: Repository<Movie>,
