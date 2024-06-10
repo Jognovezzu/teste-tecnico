@@ -11,3 +11,11 @@ CREATE TABLE IF NOT EXISTS teste.movie (
     release         timestamp without time zone NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS teste.user
+(
+   id                      SERIAL PRIMARY KEY,
+   name                    character varying(60) NOT NULL,
+   name_slug               character varying(60) NOT NULL,
+   email                   character varying(256) NOT NULL UNIQUE,
+   password                character varying NOT NULL
+);

@@ -13,3 +13,9 @@ INSERT INTO teste.movie
     ('The Lord of the Rings: The Fellowship of the Ring', 'Peter Jackson', 2001, 8.8, 'Adventure', '2001-12-19'),
     ('Forrest Gump', 'Robert Zemeckis', 1994, 8.8, 'Drama', '1994-07-06'),
     ('Inception', 'Christopher Nolan', 2010, 8.8, 'Action', '2010-07-16');
+
+INSERT INTO teste.user
+  (id, name, name_slug, email, password)
+  VALUES
+      (0, 'default_admin', 'default_admin', 'admin@calcomp.org.br','$2b$08$0KRZ3Uc6Jpldqn5d/rkZYuO3ROn.lMCHsboXpmoxTXfTwWiosEkYq');
+
