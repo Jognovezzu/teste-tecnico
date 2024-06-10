@@ -1,7 +1,7 @@
 \connect jogno;
 
 INSERT INTO teste.movie
-    (title, director, year, rating, genre, releaseDate)
+    (title, director, year, rating, genre, release)
     VALUES
     ('The Shawshank Redemption', 'Frank Darabont', 1994, 9.3, 'Drama', '1994-10-14'),
     ('The Godfather', 'Francis Ford Coppola', 1972, 9.2, 'Crime', '1972-03-24'),

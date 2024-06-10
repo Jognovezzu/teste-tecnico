@@ -2,18 +2,16 @@
 
 FROM node:18.13.0 AS production
 
-WORKDIR /urs/src/api      
+WORKDIR /usr/src/api
 
-COPY ./api/package*.json ./
+COPY ./api/package*.json ./ 
 
 RUN npm i --omit=dev --ignore-scripts
 
-COPY ./api ./
+RUN npm install -g @nestjs/cli
 
+COPY ./api ./
 COPY ./envs/.security.env ./api
 
-# FIX BCRYPT BUG
-
-RUN npm uninstall bcrypt
-RUN npm install bcrypt
+RUN npm uninstall bcrypt && npm install bcrypt
 RUN npm run build

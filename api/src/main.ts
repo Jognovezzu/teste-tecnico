@@ -9,7 +9,7 @@ async function application(): Promise<void> {
         new FastifyAdapter(),
     );
 
-    await app.listen(3000);
+    await app.listen(8085, "0.0.0.0");
 }
 
 application().catch((error) => console.log(error));

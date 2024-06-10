@@ -24,5 +24,5 @@ export class Movie {
     genre: string;
 
     @Column()
-    releaseDate: Date;
+    release: Date;
 }

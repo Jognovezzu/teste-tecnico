@@ -17,6 +17,6 @@ export class MovieCreateDTO {
     genre: string;
 
     @IsDate()
-    releaseDate: Date;
+    release: Date;
 
 }

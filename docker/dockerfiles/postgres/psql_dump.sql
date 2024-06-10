@@ -8,6 +8,6 @@ CREATE TABLE IF NOT EXISTS teste.movie (
     year            INTEGER NOT NULL,
     rating          DECIMAL(2, 1),
     genre           VARCHAR(255) NOT NULL,
-    releaseDate     timestamp without time zone NOT NULL
+    release         timestamp without time zone NOT NULL
 );
 
