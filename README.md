@@ -8,7 +8,7 @@ Projeto do Backend para uma API para um Teste Prático Online.
 <img style="margin: 10px" src="assets/javascript.svg" alt="JavaScript" title="JavaScript" height="50" />
 <img style="margin: 10px" src="assets/nestjs-icon.svg" alt="NestJS" title="NestJS" height="50" />
 <img style="margin: 10px" src="assets/typescript.svg" alt="TypeScript" title="TypeScript" height="50" />
-<img style="margin: 10px" src="assets/postgres-icon.svg" alt="Postgres" title="Postgres" height="50" />
+<img style="margin: 10px" src="assets/postgresql.svg" alt="Postgres" title="Postgres" height="50" />
 <img style="margin: 10px" src="assets/swagger.svg" alt="Swagger" title="Swagger" height="50" />
 <img style="margin: 10px" src="assets/docker.svg" alt="Docker" title="Docker" height="50" />
 <img style="margin: 10px" src="assets/redis.svg" alt="Redis" title="Redis" height="50" />
