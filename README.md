@@ -5,11 +5,7 @@ Projeto do Backend para uma API para um Teste Prático Online.
 
 ## 2. Tecnologias | Frameworks :
 
-## 2. Tecnologias | Frameworks :
-
-## 2. Tecnologias | Frameworks :
-
-<div style="display: flex; justify-content: center; gap: 20px;">
+<div style="display: flex; justify-content: space-between; gap: 20px;">
 
   <img src="assets/javascript.svg" alt="JavaScript" title="JavaScript" height="50" />
   <img src="assets/nestjs-icon.svg" alt="NestJS" title="NestJS" height="50" />
