@@ -10,6 +10,8 @@ async function application(): Promise<void> {
         new FastifyAdapter(),
     );
 
+    const port = process.env.PORT ? Number(process.env.PORT) : 8085;
+
     const config = SwaggerConfig
 
     const document = SwaggerModule.createDocument(app, config);
@@ -19,7 +21,7 @@ async function application(): Promise<void> {
         },
     });
 
-    await app.listen(8085, "0.0.0.0");
+    await app.listen(port, "0.0.0.0");
 
 }
 
