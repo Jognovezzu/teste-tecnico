@@ -7,7 +7,9 @@ Projeto do Backend para uma API para um Teste Prático Online.
 
 ## 2. Tecnologias | Frameworks :
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
+## 2. Tecnologias | Frameworks :
+
+<div style="display: flex; justify-content: center; gap: 20px;">
 
   <img src="assets/javascript.svg" alt="JavaScript" title="JavaScript" height="50" />
   <img src="assets/nestjs-icon.svg" alt="NestJS" title="NestJS" height="50" />
@@ -18,6 +20,7 @@ Projeto do Backend para uma API para um Teste Prático Online.
   <img src="assets/redis.svg" alt="Redis" title="Redis" height="50" />
 
 </div>
+
 
 
 ## 3. EXECUTAR PROJETO:
