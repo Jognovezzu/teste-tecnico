@@ -3,6 +3,7 @@
 import { TypeOrmModuleAsyncOptions } from "@nestjs/typeorm";
 import {ConfigModule, ConfigService} from '@nestjs/config';
 import { Movie } from "src/models/movies/movie.entity";
+import { User } from "src/models/users/users.entity";
 
 
 export const dbConfigOptions: TypeOrmModuleAsyncOptions = {
@@ -15,7 +16,8 @@ export const dbConfigOptions: TypeOrmModuleAsyncOptions = {
         synchronize: false,
         schema: configService.get('POSTGRES_DB_SCHEMA'),
         entities: [
-            Movie
+            Movie,
+            User,
         ],
     }),
 };
