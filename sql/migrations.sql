@@ -17,5 +17,5 @@ INSERT INTO teste.movie
 INSERT INTO teste.user
   (id, name, name_slug, email, password)
   VALUES
-      (0, 'default_admin', 'default_admin', 'admin@calcomp.org.br','$2b$08$0KRZ3Uc6Jpldqn5d/rkZYuO3ROn.lMCHsboXpmoxTXfTwWiosEkYq');
+      (0, 'default_admin', 'default_admin', 'admin@admin.com.br','$2b$08$0KRZ3Uc6Jpldqn5d/rkZYuO3ROn.lMCHsboXpmoxTXfTwWiosEkYq');
 
