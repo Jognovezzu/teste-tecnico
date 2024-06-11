@@ -10,10 +10,8 @@ RUN npm i --omit=dev --ignore-scripts
 
 RUN npm install -g @nestjs/cli
 
-RUN ls
 
 COPY ./api ./
-COPY ./envs/.security.env ./api
 
 RUN npm uninstall bcrypt && npm install bcrypt
 RUN npm run build
