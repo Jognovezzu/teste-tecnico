@@ -21,6 +21,7 @@ services:
       - 8229:8229
     depends_on:
       - db
+      - redis
 
   db:
     container_name: db
@@ -38,6 +39,15 @@ services:
       - teste-db-data:/var/lib/postgresql/data
     command: 
       - "-p 8432"
+  
+  redis:
+    container_name: redis
+    image: redis:6.0.9
+    restart: always
+    networks:
+      - teste-network
+    ports:
+      - 6379:6379
 
 networks:
   teste-network:

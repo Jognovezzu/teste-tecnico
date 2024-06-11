@@ -16,6 +16,8 @@ const database_config_1 = require("./config/database.config");
 const config_1 = require("@nestjs/config");
 const auth_module_1 = require("./models/auth/auth.module");
 const users_module_1 = require("./models/users/users.module");
+const cache_manager_1 = require("@nestjs/cache-manager");
+const redis_config_1 = require("./config/redis.config");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -25,6 +27,7 @@ exports.AppModule = AppModule = __decorate([
             config_1.ConfigModule.forRoot({
                 envFilePath: '.security.env',
             }),
+            cache_manager_1.CacheModule.registerAsync(redis_config_1.RedisOptions),
             movie_module_1.MovieModule,
             auth_module_1.AuthModule,
             users_module_1.UserModule],

@@ -8,17 +8,14 @@ import { ConfigModule } from '@nestjs/config';
 import { AuthModule } from './models/auth/auth.module';
 import { UserModule } from './models/users/users.module';
 import { CacheModule } from '@nestjs/cache-manager';
+import { RedisOptions } from './config/redis.config';
 
 @Module({
   imports: [TypeOrmModule.forRootAsync(dbConfigOptions),
     ConfigModule.forRoot({
       envFilePath: '.security.env',
     }),
-    CacheModule.register({
-      store: 'redisStore',
-      host: process.env.REDIS_HOST,
-      port: parseInt(process.env.REDIS_PORT),
-    }),
+    CacheModule.registerAsync(RedisOptions),
     MovieModule,
     AuthModule,
     UserModule],
