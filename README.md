@@ -50,3 +50,15 @@ $ docker exec db psql -U postgres -p 8432 -a -f migrations.sql
 ```
 
 ---
+
+
+## 5. COMENTÁRIOS PESSOAIS:
+Achei o teste bem interessante, consegui concluir em um tempo curto justamente por ja ter uma experiencia anterior (cerca de 1 ano e meio) com a maioria das tecnologias utilizadas no teste. 
+
+As partes mais complexas foram a parte de autenticação e a implementação do Redis, pois não tenho muita experiencia em ambas as partes, mas consegui concluir implementando de maneira simples.
+
+Quanto a parte do Deploy, também nunca tinha realizado. Então foi uma experiência nova e interessante.
+
+Obs: A diversas melhorias que podem ser feitas, como adicionar filtro na pesquisa dos filmes, melhorar a documentação, melhorar a segurança, etc. Mas por questão não criar complexidade além do necessário e pelo tempo não foi possível implementar.
+
+Agradeço a oportunidade.
