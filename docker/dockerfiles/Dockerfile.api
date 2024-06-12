@@ -19,3 +19,5 @@ COPY ./api .
 RUN nest build
 
 EXPOSE 8085
+
+CMD [ "node", "dist/main"]
